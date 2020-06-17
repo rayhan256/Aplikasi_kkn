@@ -9910,6 +9910,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
+  grid-gap: 1rem;
 }
 .container .frame .card {
   width: 100%;
@@ -9920,6 +9921,9 @@ h3 {
 }
 .container .frame .card .card-footer {
   background: white;
+}
+.container .frame .card .card-footer .btn {
+  border-radius: 10rem;
 }
 .container .frame .card .card-body .card-text {
   height: 5rem;

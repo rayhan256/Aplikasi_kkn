@@ -9904,12 +9904,14 @@ h3 {
   }
 }
 .container {
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 .container .frame {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
+  grid-gap: 1rem;
+  object-fit: cover;
 }
 .container .frame .card {
   width: 100%;
@@ -9920,6 +9922,39 @@ h3 {
 }
 .container .frame .card .card-footer {
   background: white;
+}
+.container .frame .card .card-footer .btn {
+  border-radius: 10rem;
+}
+.container .frame .card .card-body .card-text {
+  height: 5rem;
+}
+
+.login-container {
+  margin: 0 auto;
+  display: grid;
+  margin-top: 13rem;
+}
+.login-container .card {
+  width: 25%;
+  margin: 0 auto;
+  background: #5f4dc0;
+  transition: 0.5s ease-out;
+}
+.login-container .card:hover {
+  width: 50%;
+  transition: 0.5s ease-out;
+}
+.login-container .card .card-body {
+  margin: 0 auto;
+}
+.login-container .card .card-body .form-group .form-control {
+  color: #5f4dc0;
+  border-color: white;
+}
+.login-container .card .card-body .btn {
+  border-radius: 10rem;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
