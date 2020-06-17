@@ -1,0 +1,14 @@
+.container{
+    margin-top: 1rem; 
+    .frame{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(1, 1fr);        
+        .card{
+            width: 15rem;   
+            img{
+                height: 10rem; 
+            }          
+        }
+    }
+} 
