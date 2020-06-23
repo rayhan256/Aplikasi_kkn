@@ -9903,58 +9903,251 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.container {
+.bg-home #bg {
+  width: 100%;
+  height: 165vh;
+  background: #003c7c;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  clip-path: polygon(40% 0, 77% 0, 43% 100%, 0 100%, 0 0);
+}
+@media (max-width: 400px) {
+  .bg-home #bg {
+    height: 390vh;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 14% 100%);
+  }
+}
+.bg-home .home-index {
   margin-top: 5rem;
 }
-.container .frame {
+.bg-home .frame {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  align-items: flex-start;
+  grid-gap: 1rem;
+  object-fit: cover;
+}
+.bg-home .frame .card {
+  width: 100%;
+}
+.bg-home .frame .card img {
+  width: 100%;
+  height: 10rem;
+}
+.bg-home .frame .card .card-footer {
+  background: white;
+}
+.bg-home .frame .card .card-footer .btn {
+  border-radius: 10rem;
+}
+.bg-home .frame .card .card-body .card-text {
+  height: 5rem;
+}
+
+.login-page #bg {
+  width: 100vw;
+  height: 100vh;
+  background: #003c7c;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  clip-path: polygon(40% 0, 77% 0, 43% 100%, 0 100%, 0 0);
+}
+@media (max-width: 400px) {
+  .login-page #bg {
+    clip-path: polygon(100% 0, 100% 68%, 71% 100%, 0 100%, 0 0);
+  }
+}
+
+div.login-container div.row div.col div.card {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+@media (max-width: 400px) {
+  div.login-container div.row div.col div.card {
+    width: 100%;
+    margin-top: 10rem;
+    margin-right: 0.3rem;
+  }
+}
+div.login-container div.row div.col div.card div.card-body {
+  padding: 15px 20px;
+}
+div.login-container div.row div.col div.card div.card-footer {
+  padding: 10px 20px;
+}
+
+.bg-profile #bg {
+  width: 100%;
+  height: 100vh;
+  background: #003c7c;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  clip-path: polygon(40% 0, 77% 0, 43% 100%, 0 100%, 0 0);
+}
+@media (max-width: 400px) {
+  .bg-profile #bg {
+    height: 120vh;
+    clip-path: polygon(0 0, 72% 0, 25% 100%, 0% 100%);
+  }
+}
+
+.container-profile {
+  margin-top: 5rem;
+  width: 60 .container-profile;
+}
+.container-profile .frame-profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 1rem;
   object-fit: cover;
 }
-.container .frame .card {
-  width: 100%;
+@media (max-width: 400px) {
+  .container-profile .frame-profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    align-items: flex-start;
+    grid-gap: 1rem;
+    object-fit: cover;
+  }
 }
-.container .frame .card img {
+.container-profile .frame-profile .card {
+  width: 100%;
+  margin: 0 auto;
+}
+.container-profile .frame-profile .card img {
+  margin-top: 3rem;
   width: 100%;
   height: 10rem;
 }
-.container .frame .card .card-footer {
+.container-profile .frame-profile .card .card-footer {
   background: white;
 }
-.container .frame .card .card-footer .btn {
+.container-profile .frame-profile .card .card-footer .btn {
   border-radius: 10rem;
 }
-.container .frame .card .card-body .card-text {
-  height: 5rem;
+.container-profile .frame-profile .card .card-body .card-text .form-group input {
+  margin: 1rem auto;
 }
 
-.login-container {
+.bg-informasi #bg {
+  width: 100%;
+  height: 150vh;
+  background: #003c7c;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  clip-path: polygon(40% 0, 77% 0, 43% 100%, 0 100%, 0 0);
+}
+@media (max-width: 400px) {
+  .bg-informasi #bg {
+    height: 130vh;
+    clip-path: polygon(0 0, 72% 0, 25% 100%, 0% 100%);
+  }
+}
+
+.container-informasi {
+  width: 100%;
+}
+.container-informasi .row .col-md-3 .row .card {
+  width: 100%;
+  margin-left: 5rem;
+}
+@media (max-width: 400px) {
+  .container-informasi .row .col-md-3 .row .card {
+    margin: 0.3rem;
+  }
+}
+.container-informasi .row .col-md-3 .row .card .card {
+  margin: 0.1rem;
+}
+.container-informasi .row .col-9 .card {
+  margin-right: 5rem;
+}
+@media (max-width: 400px) {
+  .container-informasi .row .col-9 .card {
+    display: none;
+  }
+}
+.container-informasi .row .col-9 .card h5 {
+  margin: 14rem;
+}
+.container-informasi .row .col-9 .card .card-body .carousel .carousel-inner .carousel-item img {
+  height: 28rem;
+}
+
+.bg-kelompok #bg {
+  width: 100%;
+  height: 150vh;
+  background: #003c7c;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  clip-path: polygon(40% 0, 77% 0, 43% 100%, 0 100%, 0 0);
+}
+@media (max-width: 400px) {
+  .bg-kelompok #bg {
+    height: 130vh;
+    clip-path: polygon(0 0, 72% 0, 25% 100%, 0% 100%);
+  }
+}
+
+.container-kelompok {
+  width: 100%;
+}
+.container-kelompok .frame-kelompok .card {
+  width: 100%;
+}
+.container-kelompok .frame-kelompok .card .card-body {
+  text-align: center;
+}
+.container-kelompok .frame-kelompok .card .card-body .table {
   margin: 0 auto;
-  display: grid;
-  margin-top: 13rem;
 }
-.login-container .card {
-  width: 25%;
-  margin: 0 auto;
-  background: #5f4dc0;
-  transition: 0.5s ease-out;
+
+.bg-laporan #bg {
+  width: 100%;
+  height: 180vh;
+  background: #003c7c;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  clip-path: polygon(40% 0, 77% 0, 43% 100%, 0 100%, 0 0);
 }
-.login-container .card:hover {
-  width: 50%;
-  transition: 0.5s ease-out;
+@media (max-width: 400px) {
+  .bg-laporan #bg {
+    height: 120vh;
+    clip-path: polygon(0 0, 100% 0, 46% 100%, 0% 100%);
+  }
 }
-.login-container .card .card-body {
-  margin: 0 auto;
+
+.container-laporan {
+  width: 100%;
+  color: white;
 }
-.login-container .card .card-body .form-group .form-control {
-  color: #5f4dc0;
-  border-color: white;
+.container-laporan .frame {
+  margin: 5rem;
 }
-.login-container .card .card-body .btn {
-  border-radius: 10rem;
-  margin: 0 auto;
+.container-laporan .frame .card {
+  width: 100%;
+  margin-left: 5rem;
+}
+.container-laporan .frame .card .card-body {
+  text-align: center;
+}
+.container-laporan .frame .card {
+  margin: 0.1rem;
+}
+
+#map_mahasiswa #mapMahasiswa {
+  width: 100vw;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */

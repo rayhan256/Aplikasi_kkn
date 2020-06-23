@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <title>Map KKN</title>
+</head>
+
+<body id="map_mahasiswa">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <form action="" method="post" id="form_map_mahasiswa">
+                        <div class="form-group mt-3" style="display: flex; left: 1em;">
+                            <input type="text" name="lokasi_kkn" id="lokasi_kkn" class="form-control">
+                            <input type="submit" value="Cari" class="btn btn-success">
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="mapMahasiswa" class="mt-5"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgcyFBH0RdP4UiDf_xudBu5Ca5sVrV2Ok&callback=initialize"
+        async defer></script>
+    <script async src="./assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,83 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body>
-
+  <body class="bg-home">
+    <div id="bg"></div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="#">Logo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Main Menu</a>
-                </li>
-
-            </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"></ul>
+      </div>
     </nav>
-    <div class="container">
-        <div class="frame">
-            <div class="card">
-                <img src="assets/images/map.svg" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">Map</div>
-                    <div class="card-text">Aplikasi Map Yang Memudahkan Kita Untuk Melacak Lokasi KKN</div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Klik Disini</a>
-                    </div>
-                </div>
+    <div class="container home-index">
+      <div class="frame">
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+          <img src="assets/images/map.svg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title h6"><strong>Map</strong></div>
+            <div class="card-text">
+              Aplikasi Map Yang Memudahkan Kita Untuk Melacak Lokasi KKN
             </div>
-
-            <div class="card">
-                <img src="assets/images/group.svg" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">Kelompok</div>
-                    <div class="card-text">Fitur Untuk Melihat Anggota Kelompok</div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Klik Disini</a>
-                    </div>
-                </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Klik Disini</a>
             </div>
-
-            <div class="card">
-                <img src="assets/images/report.svg" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">Laporan</div>
-                    <div class="card-text">Fitur Untuk Menulis Laporan</div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Klik Disini</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/images/aboutme.svg" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">About Me</div>
-                    <div class="card-text">Periksakan Profil Anda</div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Klik Disini</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</body>
 
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+          <img src="assets/images/group.svg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title h6"><strong>Kelompok</strong></div>
+            <div class="card-text">Fitur Untuk Melihat Anggota Kelompok</div>
+            <div class="card-footer">
+              <a href="kelompok_kkn.html" class="btn btn-primary"
+                >Klik Disini</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+          <img src="assets/images/report.svg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title h6"><strong>Laporan</strong></div>
+            <div class="card-text">Fitur Untuk Menulis Laporan</div>
+            <div class="card-footer">
+              <a href="laporan.html" class="btn btn-primary">Klik Disini</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+          <img src="assets/images/aboutme.svg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title h6"><strong>About Me</strong></div>
+            <div class="card-text">Periksakan Profil Anda</div>
+            <div class="card-footer">
+              <a href="profile_mhs.html" class="btn btn-primary">Klik Disini</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+          <img src="assets/images/dinas.svg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title h6">
+              <strong>Dinas UMKM & Koperasi</strong>
+            </div>
+            <div class="card-text">Akses Langsung Dinas UMKM & Koperasi</div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Klik Disini</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+          <img src="assets/images/informasi.svg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title h6"><strong>Informasi KKN</strong></div>
+            <div class="card-text">Fitur Untuk Mengecek Informasi KKN</div>
+            <div class="card-footer">
+              <a href="informasi.html" class="btn btn-primary">Klik Disini</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
